@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BTM - Crystals Game</title>
+<!--===============================GOOGLE FONTS=============================================================-->
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+<!--===============================BOOTSTRAP CDN COMPILED AND MINIFIED CSS==================================-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--===============================CSS Reset and HW4.css==================================================================-->
+<link rel="stylesheet" type="text/css" href="assets/css/hw4reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/hw4.css">
+<!--===============================BTM FAVICON=========================================================-->
+<link rel="icon" href="assets/images/btmfavicon.png">
+<!--===============================JQUERY.MIN CDN===========================================================-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--===============================BOOTSTRAP CDN COMPILED AND MINIFIED JS===================================-->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrapper">
+<div class="container">
+<!--===============================CONTENT START============================================================-->
+<header>
+        <div class="header center-block"></div>
+</header>   
+<main class="container content">
+    <div>
+        <table class="game-content" align="center">
+            <thead>
+                <tr>
+                    <th colspan="2" align="center">
+                        <div id="instructions">
+                            <h1>Click a crystal to add its secret amount to total 'Your Value'</h1>
+                            <h1>Match 'Your Value' to 'Value to Match' to win! If you go over you lose.</h1>
+                            <h1>Note that each crystal's value is different every game!</h1>
+                            <h1>Goodluck, and have fun.</h1>
+                        </div>
+                            <img id="youwin-image" src="assets/images/youwin.png" alt="Winning Image" />
+                            <img id="gameover-image" src="assets/images/gameover.png" alt="Game Over Image" />
+                            <h1 id="pressKeyTryAgain">Press Any Key to Play Again!</h1>
+                    </th>
+                </tr>
+            </thead>  
+            <tbody align="center">
+                <tr class="scoreboard">
+                    <td>
+                        <h4><u>Value to Match:</u></h4> <div id="computerValue"></div>
+                    </td>
+                    <td>
+                        <h4><u>Your Value:</u></h4>  <div id="playerValue"></div>
+                    </td>
+                    <td>
+                        <h1><u>Wins:</u></h1>  <div id="gameWins"></div>
+                        <h1><u>Losses:</u></h1>  <div id="gameLosses"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="crystalButtons">
+                        <button id="heroCrystal" class="button pulse"><img class="heroCrystal" src="assets/images/heroCrystal.png" alt="Hero Crystal"/></button>
+                        <button id="sidekickCrystal" class="button pulse"><img class="sidekickCrystal" src="assets/images/sidekickCrystal.png" /></button>
+                        <button id="shadowtakenCrystal" class="button pulse"><img class="shadowtakenCrystal" src="assets/images/shadowtakenCrystal.png" /></button>
+                        <button id="mothmanCrystal" class="button pulse"><img class="mothmanCrystal" src="assets/images/mothmanCrystal.png" /></button>
+
+                    </td>
+                </tr>
+            </tbody>      
+        </table>
+    </div> 
+</main>                                      
+<footer id="footer"></footer>
+<!--===============================Homework 4 JS FILE================================================-->
+<script type="text/javascript" src="assets/javascript/hw4.js"></script>
+<script>
+
+</script>
+</div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,159 @@
+/*Import font for crystal numbers*/
+@import url('https://fonts.googleapis.com/css?family=Rambla|Rock+Salt');
+
+/*NEW STUFF*/
+.header {
+    background: url(../images/btmbanner.png);
+    background-repeat: no-repeat;
+    border-bottom: 8px solid gray;
+    width: 94%;
+    height: 213px;
+    border-radius: 10px;
+    margin: 0 auto 2% auto;
+    display:block;
+
+}
+
+.content {
+    background: #fff;
+    border-radius: 15px;
+    max-width: 980px;
+    margin-top: 5px!important;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#gameover-image, #youwin-image {
+    margin:auto;
+}
+
+#instructions {
+    font-weight:bold;
+    font-size: 1.1em;
+}
+
+.heroCrystal, .sidekickCrystal, .shadowtakenCrystal, .mothmanCrystal {
+    width:200px;
+}
+
+/*pulse effect for crystal hover*/
+.pulse:hover {
+    animation: pulse 1s infinite;
+  }  
+@keyframes pulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+button:focus {
+    outline:none;
+}
+
+table {
+    margin: 0px auto;
+}
+
+thead, .scoreboard {
+    font-family: 'Rambla', sans-serif;
+    border-radius: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: none
+}
+
+.game-content thead tr th {
+    text-align: center;
+    background-color:lightgray;
+    padding:15px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.scoreboard {
+    display: inline;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.scoreboard td {
+    background-color:lightskyblue;
+    min-width: 250px;
+    border: 3px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight:bold;
+    color: #3a3a3a;
+}
+
+#computerValue, #playerValue {
+    line-height: 150px;
+    font-size: 3em;
+    font-family: 'Rock Salt', cursive;
+    color: royalblue;
+}
+
+#gameWins, #gameLosses {
+    line-height: 65px;
+    font-size: 2em;
+    font-family: 'Rock Salt', cursive;
+    color: royalblue;
+}
+
+#pressKeyTryAgain {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 10px;
+    animation: pulse 1s infinite;
+}
+
+/******************************************************/
+
+/*body {
+
+    background-size: 200px;
+    background-repeat: repeat;
+    padding-top: 10px;
+    min-height: 100%;
+    height: 100%
+}*/
+
+html {
+    height: 100%
+}
+
+.wrapper {
+    margin: 0 auto -155px
+}
+
+body { 
+  background: url(../images/btmbackground.png), linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3); 
+  -webkit-animation: rainbow 100s ease infinite;
+  -z-animation: rainbow 100s ease infinite;
+  -o-animation: rainbow 100s ease infinite;
+    animation: rainbow 100s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
